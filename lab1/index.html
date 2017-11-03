@@ -5,31 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="js/bootstrap.min.js" rel=></script>
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js" rel=></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
 </head>
 
 <body>
-
     <!--Navbar first-->
     <!--NOT DONE!!!-->
-
-
-
-
-
-
-
-
+    <nav class="navbar navbar-default"> 
+        <div class="container-fluid"><!--container-fluid expands to fill the available width-->
+            <div class="navbar-header"><!--holds the content that will be visible when the navbar becomes collapsible-->                
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
+                    data-target="#navbar-collapse-container" aria-expanded="false"><!--creates a button to toggle the navbar on small screens-->     
+                <span class="icon-bar"></span><!--the three icon-bars creates three lines that represents the hamburger menu-->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>  
+                <div class="navbar-brand">Responsive site</div><!--creates a brand for navbar-->
+            </div>    
+            <div class="collapse navbar-collapse" id="navbar-collapse-container"><!--holds the content that will be visible when the navbar is collapsed-->
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!--Jumbotron-->
-
     <!--A jumbotron can extend the entire viewport to showcase special content. 
     It is a grey box with rounded corners that enlarges the font-size of the text inside it.-->
-
-    <div class="container">
+    <div class="container"><!--container has a fixed width for each screen size-->
         <div class="jumbotron">
             <h1>My awesome lab 1</h1>
             <p>In this lab I will show my skills in basic Bootstrap.</p>
@@ -38,7 +46,6 @@
 
     <!--Panels-->
     <!--A panel is a box with a border and some padding around its content-->
-
     <div class="container">
         <div class="row">
             <div class="col-md-4"><!--grid columns must add up to twelve for a row (3 col * 4 = 12)-->
@@ -52,7 +59,6 @@
                 yang telah menyertakan satu versi Lorem Ipsum.</div>
                 </div>
             </div>
-
             <div class="col-md-4">
                 <div class="panel panel-default">
                 <div class="panel-heading">Heading</div>
@@ -64,7 +70,6 @@
                 yang telah menyertakan satu versi Lorem Ipsum.</div>
                 </div>
             </div>
-      
             <div class="col-md-4">
                 <div class="panel panel-default">
                 <div class="panel-heading">Heading</div>
@@ -78,7 +83,5 @@
             </div>
         </div>
     </div>
-
 </body>
-
 </html>
