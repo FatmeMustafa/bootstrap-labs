@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lab2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js" rel=></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!--Start Page-->
+
+<!--Collapsible Navbar-->
+<div class="container"><!--nav is placed in a container to take limited screen width-->    
+    <nav class="navbar navbar-default"> 
+        <div class="container-fluid"><!--container-fluid expands to fill the available width-->
+            <div class="navbar-header"><!--holds the content that will be visible when the navbar becomes collapsible-->                
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
+                    data-target="#navbar-collapse-container"><!--creates a button to toggle the navbar on sm-screen-->     
+                <span class="icon-bar"></span><!--the icon-bars creates three lines that represents the hamburger menu-->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>  
+                <div class="navbar-brand"><!--creates a brand for navbar-->
+                <span class="glyphicon glyphicon-grain"></span><!--creates an icon for navbar-->
+                Lotus Wellness
+                </div>
+            </div>    
+            <div class="collapse navbar-collapse" id="navbar-collapse-container"><!--holds the content that will be visible when the navbar is collapsed-->
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="dropdown"><a href="treatments.html" data-toggle="dropdown" class="dropdown-toggle">Treatments <i class="caret"></i></a>
+                        <ul class="dropdown-menu"><!--creates a dropdown list-->
+                            <li><a href="treatments.html">All Treatments</a></li><!--href links to different html pages-->
+                            <li><a href="classic-massage.html">Classic Massage</a></li>
+                            <li><a href="taktil-massage.html">Taktil Massage</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!--Carousel-->
+<!--A carousel is a slideshow for iterating through a serie of content-->
+<div class="container hidden-xs"><!--the carousel container is hidden on xs-screen-->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel"><!--creates carousel-->  
+        <div class="carousel-inner"><!--wrapper for slides-->      
+            <div class="item active"><!--.active needs to be added on one slide otherwise the carousel will not be visible-->
+                <img src="https://s3-us-east-2.amazonaws.com/hackensackmeridianhealth/wp-content/uploads/2017/02/20164800/beyond-day-spa-spring.jpg" alt="Therapy Oils">
+                <div class="carousel-caption">
+                    <h3>Massage Therapy Oils</h3>
+                    <p>Massage therapy oils come in various grades and can be made specifically to address almost anything.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://ak-static.scoopon.com.au/scpn/deal/main/68000/68784_5.jpg?635941671771521006" alt="Foot Massage Reflexology">
+                <div class="carousel-caption">
+                    <h3>Foot Massage Reflexology</h3>
+                    <p>Reflexology works on the principle that all body organs are connected to reflex points in the feet and hands via constantly flowing energy channels.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://cdn.shopify.com/s/files/1/0372/7745/products/shutterstock_139313540.jpg?v=1476727147" alt="Aroma Facial Massage">
+                <div class="carousel-caption">
+                    <h3>Aroma Facial Massage</h3>
+                    <p>A soothing massage for the face. This aromatherapy massage boosts circulation, encouraging toxin elimination and cell renewal.</p>
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev"><!--prev alters the slide position relative to its current position-->
+            <i class="glyphicon glyphicon-chevron-left"></i><!--creates left icon-->
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next"><!--next alters the slide position relative to its current position-->
+            <i class="glyphicon glyphicon-chevron-right"></i><!--creates right icon-->
+        </a>
+        <ol class="carousel-indicators"><!--creates the dots at the bottom of each slide to shows the amount of slides and which one is viewed-->
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li><!--data-slide-to specifiies which slide to go to with the dots-->
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+    </div>
+</div>
+      
+<!--Static Picture-->
+<div class="container visible-xs"><!--content inside the container is only visible in xs-screen-->
+    <div class="row">
+        <div class="col-xs-12"> 
+            <img src="http://www.symmetrymassageandfitness.com/wp-content/uploads/2012/07/shutterstock_130366352.jpg" 
+                alt="Essential Oils" class="img-responsive">
+        </div>
+    </div>
+</div>
+<br>
+
+<!--Panel Text Columns-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"><!--grid columns must add up to twelve for a row (3 col * 4 = 12)-->
+            <div class="panel panel-primary"align="center"><!--centers the panel content-->
+                <div class="panel-heading">Facial Massage</div>
+                <div class="panel-body">Lorem Ipsum adalah text contoh digunakan didalam industri pencetakan dan typesetting. Lorem Ipsum 
+                telah menjadi text contoh semenjak tahun ke 1500an, apabila pencetak yang kurang terkenal mengambil sebuah galeri cetak dan 
+                merobakanya menjadi satu buku spesimen. Ia telah bertahan bukan hanya selama lima kurun, tetapi telah melonjak ke era 
+                typesetting elektronik, dengan tiada perubahan ketara. Ia telah dipopularkan pada tahun 1960an dengan penerbitan 
+                Letraset yang mebawa kangungan Lorem Ipsum, dan lebih terkini dengan sofwer pencetakan desktop seperti Aldus PageMaker 
+                yang telah menyertakan satu versi Lorem Ipsum.</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-primary"align="center">
+                <div class="panel-heading">Body Massage</div>
+                <div class="panel-body">Lorem Ipsum adalah text contoh digunakan didalam industri pencetakan dan typesetting. Lorem Ipsum 
+                telah menjadi text contoh semenjak tahun ke 1500an, apabila pencetak yang kurang terkenal mengambil sebuah galeri cetak dan 
+                merobakanya menjadi satu buku spesimen. Ia telah bertahan bukan hanya selama lima kurun, tetapi telah melonjak ke era 
+                typesetting elektronik, dengan tiada perubahan ketara. Ia telah dipopularkan pada tahun 1960an dengan penerbitan 
+                Letraset yang mebawa kangungan Lorem Ipsum, dan lebih terkini dengan sofwer pencetakan desktop seperti Aldus PageMaker 
+                yang telah menyertakan satu versi Lorem Ipsum.</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-primary" align="center">
+                <div class="panel-heading">Foot Massage</div>
+                <div class="panel-body">Lorem Ipsum adalah text contoh digunakan didalam industri pencetakan dan typesetting. Lorem Ipsum 
+                telah menjadi text contoh semenjak tahun ke 1500an, apabila pencetak yang kurang terkenal mengambil sebuah galeri cetak dan 
+                merobakanya menjadi satu buku spesimen. Ia telah bertahan bukan hanya selama lima kurun, tetapi telah melonjak ke era 
+                typesetting elektronik, dengan tiada perubahan ketara. Ia telah dipopularkan pada tahun 1960an dengan penerbitan 
+                Letraset yang mebawa kangungan Lorem Ipsum, dan lebih terkini dengan sofwer pencetakan desktop seperti Aldus PageMaker 
+                yang telah menyertakan satu versi Lorem Ipsum.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

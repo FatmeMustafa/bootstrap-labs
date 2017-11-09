@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lab2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js" rel=></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!--Taktil Massage-->
+
+<!--Collapsible Navbar-->
+<div class="container"><!--nav is placed in a container to take limited screen width-->    
+    <nav class="navbar navbar-default"> 
+        <div class="container-fluid"><!--container-fluid expands to fill the available width-->
+            <div class="navbar-header"><!--holds the content that will be visible when the navbar becomes collapsible-->                
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
+                    data-target="#navbar-collapse-container"><!--creates a button to toggle the navbar on small screens-->     
+                <span class="icon-bar"></span><!--the icon-bars creates three lines that represents the hamburger menu-->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>  
+                <div class="navbar-brand"><!--creates a brand for navbar-->
+                <span class="glyphicon glyphicon-grain"></span><!--creates an icon for navbar-->
+                Lotus Wellness
+                </div>
+            </div>    
+            <div class="collapse navbar-collapse" id="navbar-collapse-container"><!--holds the content that will be visible when the navbar is collapsed-->
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown active"><a href="treatments.html" data-toggle="dropdown" class="dropdown-toggle">Treatments <i class="caret"></i></a>
+                        <ul class="dropdown-menu"><!--creates a dropdown list-->
+                            <li><a href="treatments.html">All Treatments</a></li><!--href links to different html pages-->
+                            <li><a href="classic-massage.html">Classic Massage</a></li>
+                            <li><a href="taktil-massage.html">Taktil Massage</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!--Breadcrumbs-->
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <ol class="breadcrumb"> 
+                <li class="breadcrumb-item"><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                <li class="breadcrumb-item"><a href="treatments.html">All Treatments</a></li>
+                <li class="breadcrumb-item active">Taktil Massage</a></li>
+            </ol>
+        </div>
+    </div>   
+</div>
+
+<!--Image & Lead Paragraph-->
+<!--A lead paragraph makes the text stand out-->
+<div class="container">
+    <h1 class="text-primary" align="center">Taktil Massage</h1><br>
+    <div class="row bg-primary">
+        <div class="col-sm-6">
+            <div class="row"><!--adding a row here makes the picture take full width-->
+                <img src="http://shamwaridayspa.co.za/wp-content/uploads/2017/01/footmassage.jpg" 
+                alt="Taktil Massage" class="img-responsive">
+            </div>
+        </div>
+        <div class="col-sm-6 visible-xs visible-sm"><!--this col is only visible on xs and sm-screens!-->
+            <p class="lead"><br>"Also known as light touch massage therapy, soft touch massage is similar in 
+                style to qigong or lymphatic drainage massage. This type of massage is really relaxing"</p>
+        </div>
+        <div class="col-sm-6 visible-md visible-lg"><!--this col is only visible on md and lg-screens!-->
+            <p class="lead"><br><br>"Also known as light touch massage therapy, soft touch massage is similar in 
+                style to qigong or lymphatic drainage massage.  It is designed to use fingertip touch and very 
+                gentle pinching to stimulate the body’s energy points"</p>
+        </div>
+    </div>
+</div>
+
+<!--Reservation-->
+<div class="container">
+    <h3 class="text-primary" align="center">Ready to book your next appointment?</h3>
+    <h5 align="center">Please complete the form below to reserve a massage treatment</h5>
+    <form>
+        <div class="form-group"><!--form-group makes the input 100% in width-->
+            <label>Name:</label>
+                <input type="text" class="form-control" placeholder="your name"><br>
+            <label>Email:</label>
+                <input type="text" class="form-control" placeholder="your email adress"><br>
+            <label>Date:</label>
+                <input type="date" class="form-control" placeholder="select date"><br>
+            <label>Treatment:</label>
+                <input type="text" class="form-control" placeholder="select treatment">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>

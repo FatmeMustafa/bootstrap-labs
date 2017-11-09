@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lab2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js" rel=></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!--About Page-->
+
+<!--Collapsible Navbar-->
+<div class="container"><!--nav is placed in a container to take limited screen width-->    
+    <nav class="navbar navbar-default"> 
+        <div class="container-fluid"><!--container-fluid expands to fill the available width-->
+            <div class="navbar-header"><!--holds the content that will be visible when the navbar becomes collapsible-->                
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
+                    data-target="#navbar-collapse-container"><!--creates a button to toggle the navbar on small screens-->     
+                <span class="icon-bar"></span><!--the icon-bars creates three lines that represents the hamburger menu-->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>  
+                <div class="navbar-brand"><!--creates a brand for navbar-->
+                <span class="glyphicon glyphicon-grain"></span><!--creates an icon for navbar-->
+                Lotus Wellness
+                </div>
+            </div>    
+            <div class="collapse navbar-collapse" id="navbar-collapse-container"><!--holds the content that will be visible when the navbar is collapsed-->
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown"><a href="treatments.html" data-toggle="dropdown" class="dropdown-toggle">Treatments <i class="caret"></i></a>
+                        <ul class="dropdown-menu"><!--creates a dropdown list-->
+                            <li><a href="treatments.html">All Treatments</a></li><!--href links to different html pages-->
+                            <li><a href="classic-massage.html">Classic Massage</a></li>
+                            <li><a href="taktil-massage.html">Taktil Massage</a></li>
+                        </ul>
+                    </li>
+                    <li class="active"><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!--Breadcrumbs-->
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <ol class="breadcrumb"> 
+                <li class="breadcrumb-item"><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                <li class="breadcrumb-item active">About</a></li>
+            </ol>
+        </div>
+    <div>   
+</div>
+
+<!--Text & Images-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="https://wallpaperlayer.com/img/2015/10/lovely-spa-wallpaper-2676-2862-hd-wallpapers.jpg"
+                alt="Essential Oils" class="img-responsive">
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default" align="center">
+                <div class="panel-body">   
+                    Lorem Ipsum adalah text contoh digunakan didalam industri pencetakan dan typesetting. Lorem Ipsum 
+                    telah menjadi text contoh semenjak tahun ke 1500an, apabila pencetak yang kurang terkenal mengambil sebuah galeri cetak dan 
+                    merobakanya menjadi satu buku spesimen. Ia telah bertahan bukan hanya selama lima kurun, tetapi telah melonjak ke era 
+                    typesetting elektronik, dengan tiada perubahan ketara. Ia telah dipopularkan pada tahun 1960an dengan penerbitan 
+                    Letraset yang mebawa kangungan Lorem Ipsum, dan lebih terkini dengan sofwer pencetakan desktop seperti Aldus PageMaker 
+                    yang telah menyertakan satu versi Lorem Ipsum.yang telah menyertakan satu versi Lorem Ipsum.yang telah menyertakan satu versi Lorem Ipsum.
+                    yang telah menyertakan satu versi Lorem Ipsum.yang telah menyertakan satu versi Lorem Ipsum.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-push-6"><!--makes the image and text change column order-->
+            <img src="http://serenityathomemassage.com/wp-content/uploads/2016/12/massage-slider-4.jpg"
+                alt="Face Massage" class="img-responsive">
+        </div>
+        <div class="col-md-6 col-md-pull-6"><!--makes the image and text change column order-->
+                <div class="panel panel-default" align="center">
+                    <div class="panel-body">   
+                        Lorem Ipsum adalah text contoh digunakan didalam industri pencetakan dan typesetting. Lorem Ipsum 
+                        telah menjadi text contoh semenjak tahun ke 1500an, apabila pencetak yang kurang terkenal mengambil sebuah galeri cetak dan 
+                        merobakanya menjadi satu buku spesimen. Ia telah bertahan bukan hanya selama lima kurun, tetapi telah melonjak ke era 
+                        typesetting elektronik, dengan tiada perubahan ketara. Ia telah dipopularkan pada tahun 1960an dengan penerbitan 
+                        Letraset yang mebawa kangungan Lorem Ipsum, dan lebih terkini dengan sofwer pencetakan desktop seperti Aldus PageMaker 
+                        yang telah menyertakan satu versi Lorem Ipsum.yang telah menyertakan satu versi Lorem Ipsum.yang telah menyertakan satu versi Lorem Ipsum.
+                        yang telah menyertakan satu versi Lorem Ipsum.yang telah menyertakan satu versi Lorem Ipsum.
+                    </div>
+                </div>
+            </div>
+    </div> 
+    <div class="row">
+        <div class="col-md-6">
+            <img src="http://rukthaimassage.com.au/wp-content/uploads/2017/05/about-us.jpg"
+                alt="Feet Spa" class="img-responsive">
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default" align="center">
+                <div class="panel-body">   
+                    Lorem Ipsum adalah text contoh digunakan didalam industri pencetakan dan typesetting. Lorem Ipsum 
+                    telah menjadi text contoh semenjak tahun ke 1500an, apabila pencetak yang kurang terkenal mengambil sebuah galeri cetak dan 
+                    merobakanya menjadi satu buku spesimen. Ia telah bertahan bukan hanya selama lima kurun, tetapi telah melonjak ke era 
+                    typesetting elektronik, dengan tiada perubahan ketara. Ia telah dipopularkan pada tahun 1960an dengan penerbitan 
+                    Letraset yang mebawa kangungan Lorem Ipsum, dan lebih terkini dengan sofwer pencetakan desktop seperti Aldus PageMaker 
+                    yang telah menyertakan satu versi Lorem Ipsum.yang telah menyertakan satu versi Lorem Ipsum.yang telah menyertakan satu versi Lorem Ipsum.
+                    yang telah menyertakan satu versi Lorem Ipsum.yang telah menyertakan satu versi Lorem Ipsum.
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+
+</body>
+</html>
